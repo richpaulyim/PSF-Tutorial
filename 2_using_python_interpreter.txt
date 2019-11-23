@@ -1,0 +1,32 @@
+READ '1. WHETTING YOUR APPETITE'
+Also, make sure to use something unix based or at least unix-like(GNU) because Windows is for chumps ;)
+
+The python interpreter is usually installed as 'usr/local/bin/python3.8'
+You can call it in a bash shell with 
+
+$python3
+
+assuming it's already installed, and that it's the correct alias for calling python3.8.
+
+You can exit the python interpreter by passing
+
+$exit()
+
+There is an additional way of calling the interpreter with
+
+$python -c command [arg] 
+
+which executes the statements in command.
+
+There are many more flags you can use when calling 'python' in the interpreter, you can find out more here:
+https://docs.python.org/3/using/cmdline.html#using-on-general
+
+In interactive mode if you call statements that require identation, the interpreter automatically will not execute
+the code until it appears that a valid statement has been passed. 
+
+Finally, there is the interpreter and its environment
+By default the python source files are treated as encode in UTF-8, where characters of most langauges in the world can be used simultaneously in string literals, identifiers and comments...
+
+However, for the most part, beginners don't have to worry about most of the above; often we'll be using either a notebook, text editor, or IDE to write out scripts and programs in! The above should make the user aware of what is available with python...
+
+Next! (3_informal_introduction_to_python)
