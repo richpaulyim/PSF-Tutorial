@@ -5,4 +5,4 @@ This python tutorial is a code along of the Python Software Foundation's officia
 Why this tutorial?
 The Python Software Foundation's tutorial shows all the main ins-and-outs, the key and essential features of Python.
 If you know basic programming from other languages, the PSF docs are a great way to learn what is officially 
-deemed as the most notable things about the language.
+deemed as the most notable characteristics the language beyond its clean and elegant syntax. 
