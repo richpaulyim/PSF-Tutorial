@@ -1,0 +1,53 @@
+(Notes paraphrased)
+
+12.1 INTRODUCTION
+We might come into version conflicts when we use other
+people's code, or write our own code. 
+
+We avoid this problem by creating virtual environments,
+which will hold a self-contained directory tree of a Python
+installation for a particular version of Python and the
+version of the specified packages.
+
+12.2 CREATING VIRTUAL ENVIRONMENTS
+THe module that creates and manages virtual environments is
+'venv.' We specify the python version we are using 
+e.g. python3*
+
+'python3 -m venv tutorial-env' 
+The python3 file will be opened, and the '-m'
+flag runs the venv module into the 'tutorial-env'
+directory, which will be created if it does not exist. 
+
+To activate the virtual environment, we call
+'source tutorial-env/bin/activate' 
+The above works for standard bash shells
+
+"Globally" our system will recognize the binary files
+located in the the virtual environment as with the specified
+versions as the files that are important
+
+12.3 Managing Packages with pip/pip3
+We can modify packages with pip; if we are in the virtual environment,
+we can install the various packages and versions of packages
+we are interested. 
+
+We can use the Python package index to search for various packages.
+We can specify versions as 
+'pip3 install requests=2.6.0'
+
+Adding the option --upgrade will upgrade python to the latest version
+'pip3 install --upgrade requests'
+We can show information with
+'pip3 show requests'
+We cab list installed packages with 
+'pip list'
+We can use i/o redirection and show a list with specified files
+'pip3 freeze > requirements.txt'
+
+This requirements.txt file can be committed to version control
+and shipped with an application where users can install the
+necessary specifications and the correct versions supported
+'pip3 install -r requirements.txt'
+The -r flag specifies pip3 to download from the argument
+that is configured as a requirements.txt file
